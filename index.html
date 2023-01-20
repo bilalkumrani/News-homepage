@@ -1,60 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body class="px-20">
+    <!-- Navbar  -->
+    <nav class="py-20 relative mx-auto px-20">
+      <div class="flex items-center justify-between">
+        <!-- logo  -->
+        <div>
+          <img src="./assets/images/logo.svg" alt="" />
+        </div>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+        <!-- menue items  -->
+        <div class="hidden items-right space-x-6 text-gray-800 md:flex">
+          <a href="" class="hover:text-gray-400">Home</a>
+          <a href="" class="hover:text-gray-400">New</a>
+          <a href="" class="hover:text-gray-400">Popular</a>
+          <a href="" class="hover:text-gray-400">Trending</a>
+          <a href="" class="hover:text-gray-400">Categories</a>
+        </div>
+      </div>
+    </nav>
 
-  The Bright Future of Web 3.0?
+    <!-- Hero section with image  -->
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+    <section id="hero" class="space-x-4">
+      <!-- left item -->
+      <div class="container w-2/3 px-20 flex flex-col">
+        <!-- img  -->
+        <div class="flex">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="" />
+        </div>
 
-  Read more
+        <!-- heading and paragraph container  -->
+        <div class="container flex flex-row py-6">
+          <!-- Heading  -->
+          <h2 class="text-6xl font-bold text-left w-1/2">
+            The Bright Future of Web 3.0?
+          </h2>
 
-  New 
+          <div class="flex flex-col w-1/2">
+            <p class="text-sm">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              quas praesentium quisquam tenetur commodi iure quidem, quae esse
+              totam neque recusandae perspiciatis! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Amet, sed? Porro.
+            </p>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+            <a
+              href=""
+              class="bg-red-400 text-white mt-4 w-1/2 text-center hover:bg-red-300 py-2"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+      <!-- right item  -->
+    </section>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+    We dive into the next evolution of the web that claims to put the power of
+    the platforms back into the hands of the people. But is it really fulfilling
+    its promise? Read more
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+    <!-- New div  -->
+    New Hydrogen VS Electric Cars Will hydrogen-fueled cars ever catch up to
+    EVs? The Downsides of AI Artistry What are the possible adverse effects of
+    on-demand AI image generation? Is VC Funding Drying Up? Private funding by
+    VC firms is down 50% YOY. We take a look at what that means.
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+    <!-- News section  -->
+    01 Reviving Retro PCs What happens when old PCs are given modern upgrades?
+    02 Top 10 Laptops of 2022 Our best picks for various needs and budgets. 03
+    The Growth of Gaming How the pandemic has sparked fresh opportunities.
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
